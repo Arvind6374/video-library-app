@@ -1,5 +1,5 @@
 
-# 📽️ Video Library – MERN Stack Project
+# 📽️ Video Library – Project
 
 A clean and modern **Video Library Management App** built using **Node.js + Express + MongoDB + React (Vite)**.
 Users can add videos, browse videos, search by keywords, view details, and delete videos — all inside a polished dark-theme UI.
