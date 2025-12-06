@@ -1,0 +1,86 @@
+* { box-sizing: border-box; }
+
+:root{
+  --bg:#0f1113;
+  --panel:#131516;
+  --muted:#9aa0a6;
+  --accent:#6c8cff;
+  --accent-2:#7be39f;
+  --card:#16191b;
+  --glass: rgba(255,255,255,0.03);
+  --danger:#ff6161;
+}
+
+html,body,#root{ height:100%; }
+
+body{
+  margin:0;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
+  background: linear-gradient(180deg, var(--bg), #050608 45%);
+  color:#e6eef8;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+.navbar{
+  background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(0,0,0,0.3));
+  padding:14px 30px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  border-bottom:1px solid rgba(255,255,255,0.06);
+  backdrop-filter: blur(8px);
+  position:sticky;
+  top:0;
+  z-index:40;
+}
+
+.nav-brand{
+  color:var(--accent);
+  font-weight:700;
+  font-size:18px;
+  text-decoration:none;
+  display:flex;
+  gap:8px;
+  align-items:center;
+}
+
+.nav-links{
+  display:flex;
+  gap:18px;
+}
+
+.nav-links a{
+  color:var(--muted);
+  text-decoration:none;
+  font-size:14px;
+  font-weight:600;
+  padding:6px 10px;
+  border-radius:999px;
+}
+
+.nav-links a:hover{
+  color:#fff;
+  background:rgba(255,255,255,0.06);
+}
+
+.container{
+  max-width:1200px;
+  margin:28px auto;
+  padding:0 20px;
+}
+
+.page-title{
+  font-size:52px;
+  margin:18px 0 8px;
+  letter-spacing:-1px;
+}
+
+.loading,.error{
+  padding:20px;
+  text-align:center;
+}
+
+.error{ color:#ff9a9a; }
+
+.lead{ color:var(--muted); font-size:14px; }

@@ -1,0 +1,5 @@
+node_modules/
+video-library-ui/node_modules/
+.env
+*.log
+*.lock
